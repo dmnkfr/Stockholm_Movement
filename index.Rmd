@@ -1,5 +1,5 @@
 ---
-title: "Google Transit Data Across the Stockholm region. Or: Show me where you live and I tell you if you work from home."
+title: "Google transit data across the Stockholm region. Or: Show me where you live and I tell you if you work from home."
 author: "Dominik Freunberger (dominik.freunberger@gmail.com)"
 date: "3/9/2021"
 output: html_document
@@ -155,8 +155,8 @@ sthlm_work$median_income = round(as.numeric(sthlm_work$median_income), 2)
 
 ```{r fig.height=6, fig.width=6, dpi = 300}
 ggplot(sthlm_work, aes(x = mean_change, y = median_income)) +
-    geom_point(size= 3) +
-    stat_smooth(method = "lm",
+    geom_point(size= 3) +    
+  stat_smooth(method = "lm",
         col = "#e02c24",
         se = T,
         size = 2) +
