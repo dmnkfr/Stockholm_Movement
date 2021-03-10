@@ -111,7 +111,7 @@ tidy_sthlm %>%
 ```
 
 ## __Interesting.__   
-You don't have to be living in Stockholm for a long time to see that this order is not random. Rather, it seems to have to do with how posh, or, how wealthy a municipality is. Let's get the Swedish income data from [SCB](https://www.scb.se/hitta-statistik/statistik-efter-amne/hushallens-ekonomi/inkomster-och-inkomstfordelning/inkomster-och-skatter/pong/tabell-och-diagram/inkomster--individer-lankommun/sammanraknad-forvarvsinkomst-2019--per-kommun-efter-percentiler/).
+You don't have to be living in Stockholm for long to see that this order is not random. Rather, it seems to have to do with how posh, or, how wealthy a municipality is. Let's get the Swedish income data from [SCB](https://www.scb.se/hitta-statistik/statistik-efter-amne/hushallens-ekonomi/inkomster-och-inkomstfordelning/inkomster-och-skatter/pong/tabell-och-diagram/inkomster--individer-lankommun/sammanraknad-forvarvsinkomst-2019--per-kommun-efter-percentiler/).
 
 ``` {r include = F}
 if(!file.exists("income_data")) {
@@ -168,7 +168,7 @@ ggplot(sthlm_work, aes(x = mean_change, y = median_income)) +
         stat_cor(method="pearson", label.x = -28, label.y = 370000, size = 5)
 ```
 
-So, one could say people in these areas care less about restriction in general and travel more anyway. So how does mobility in other domains look in relation to the municipalities' wealth?   
+So, one could say people in these areas care less about restrictions in general and travel more anyway. How then does mobility in other domains, such as grocery shopping or recreation look in relation to the municipalities' wealth?   
 
 ``` {r include = T}
 sthlm_recr = tidy_sthlm %>%
