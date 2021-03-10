@@ -155,11 +155,11 @@ sthlm_work$median_income = round(as.numeric(sthlm_work$median_income), 2)
 
 ```{r fig.height=6, fig.width=6, dpi = 300}
 ggplot(sthlm_work, aes(x = mean_change, y = median_income)) +
-    geom_point(size= 3) +    
   stat_smooth(method = "lm",
         col = "#e02c24",
         se = T,
         size = 2) +
+        geom_point(size= 3) +
         labs(title = "Workplace Mobility: A Matter of Wealth",
              x = "% Mobility Change from Baseline",
              y = "Median Income of Municipality in SEK (2019)") +
@@ -200,7 +200,7 @@ ggplot(sthlm_recr, aes(x = mean_change, y = median_income)) +
              y = "Median Income of Municipality in SEK (2019)") +
                 ggrepel::geom_text_repel(aes(label = municipality), size = 3) +
         theme_minimal() +
-        stat_cor(method="pearson", label.x = -10, label.y = 390000, size = 5)
+        stat_cor(method="pearson", label.x = -15, label.y = 390000, size = 5)
 ```
 ``` {r include = T}
 sthlm_groc = tidy_sthlm %>%
