@@ -18,7 +18,7 @@ library(readxl)
 library(ggrepel)
 library(ggpubr)
 ```
-The data is from [Google](https://www.google.com/covid19/mobility/), so, to quote [Andy](https://inductivestep.github.io/Google-transit-London/), "data quality unclear..."
+The data is from [Google](https://www.google.com/covid19/mobility/), so, to quote [Andi](https://inductivestep.github.io/Google-transit-London/), "data quality unclear..."
 
 ``` {r include = T}
 if(!file.exists("movement_data")) {
