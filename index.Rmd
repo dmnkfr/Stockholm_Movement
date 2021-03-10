@@ -1,6 +1,6 @@
 ---
 title: "Google transit data across the Stockholm region. Or: Show me where you live and I tell you if you work from home."
-author: "Dominik Freunberger (dominik.freunberger@gmail.com)"
+author: "Dominik Freunberger (https://dmnkfr.github.io/about.html)"
 date: "3/9/2021"
 output: html_document
 ---
