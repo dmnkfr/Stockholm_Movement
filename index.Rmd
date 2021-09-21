@@ -228,6 +228,6 @@ As we can see, municipalities further away from the centre ___tend___ to travel 
 
 This is of course not surprising. Plenty of analyses have shown that lower income (but also other factors, such as being male, less educated, not married, an immigrant, etc.) increases the risk of [death through COVID-19](https://www.nature.com/articles/s41467-020-18926-3). The need to travel to work is often accompanied by the need to use public transport, thereby increasing the risk of being exposed to the virus.
 
-Note that this little analysis is neither meant to be comprehensive nor complete. Rather, I was surprised by by the initial pattern that emerged and then I wondered and then I explored. Please don't hesitate to [contact me](https://dmnkfr.netlify.app/) for any questions, comments, or feedback.
+Note that this little analysis is neither meant to be comprehensive nor complete. Rather, I was surprised by the initial pattern that emerged and then I wondered and then I explored. Please don't hesitate to [contact me](https://dmnkfr.netlify.app/) for any questions, comments, or feedback.
 
 <br/>
