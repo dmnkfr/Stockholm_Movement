@@ -74,24 +74,19 @@ As you can see, there's more data included but here we'll focus on the data abou
 
 ### How did mobility change in the different municipalities?
 
-```{r prepare-plot1, warning=FALSE, message=FALSE}
+```{r plot1, fig.dim=c(12,6), warning=FALSE, message=FALSE}
 tidy_work = tidy_sthlm %>%
   filter(location %in% c("workplaces"))
 
-plot1 = tidy_work %>%
+tidy_work %>%
         mutate(location = gsub("_", " ", location)) %>%
         ggplot(aes(x = day, 
                    y = percent_change_from_baseline,
                    color = sub_region_2)) +
         theme(legend.position = "none") +
         labs(x = "Date", y = "% Change from Baseline") +
-        theme_ipsum()
-
-```
-
-```{r plot1, fig.dim=c(12,6), warning=FALSE, message=FALSE}
-plot1 +
-  geom_smooth(se = F, size = 1) +
+        theme_ipsum() +
+        geom_smooth(se = F, size = 1) +
         scale_color_discrete(name = "Municipality")
 ```
 While we can see that some regions went back to business-as-usual, other areas reduced their mobility to a very large degree and kept it that way throughout 2020.
